@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdInputModule, MdButtonModule} from '@angular/material';
 import { AppComponent } from './app.component';
+import { PalindromeComponent } from './palindrome/palindrome.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PalindromeComponent
   ],
   imports: [
     BrowserModule,
