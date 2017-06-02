@@ -1,4 +1,10 @@
-<form>
+<div class="col-md-offset-3 col-md-5 ">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Enter 2 numbers</h3>
+  </div>
+  <div class="panel-body">
+    <form>
 	<md-input-container>
 		<input mdInput  [(ngModel)]="largestPalindrome.lowerBound" #lowerBound name="lowerBound" placeholder="Lower Bound" type="number">
 	</md-input-container>
@@ -7,6 +13,7 @@
 	</md-input-container>
 	<button md-raised-button (click)="findLargestPalindrome(lowerBound.value, upperBound.value)">Search</button>				
 </form>
-<div>
-	Largest Palindromic number is {{largestPalindrome.largestPalindrome}}
+  </div>
+  <div class="panel-footer panel-info">Largest Palindromic number is {{largestPalindrome.largestPalindrome}}</div>
+</div>
 </div>

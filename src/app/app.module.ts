@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdInputModule, MdButtonModule} from '@angular/material';
 import { FormsModule }   from '@angular/forms';
+import { RouterModule }   from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
 
@@ -17,6 +19,12 @@ import { PalindromeComponent } from './palindrome/palindrome.component';
     BrowserAnimationsModule,
   	MdInputModule,
   	MdButtonModule,
+  	RouterModule.forRoot([
+  	{
+    	path: 'find',
+    	component: PalindromeComponent
+  	}
+])
   ],
   providers: [],
   bootstrap: [AppComponent]
