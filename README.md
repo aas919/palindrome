@@ -9,3 +9,6 @@
 3. npm install
 4. ng serve
 5. Visit http://localhost:4200
+
+## Future work
+1. Add progress bar to help determine time for large numbers
