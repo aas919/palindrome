@@ -4,7 +4,7 @@
 2. npm >= v5.0.0 () 
 
 ## Run
-1. git clone 
+1. git clone https://github.com/aas919/palindrome.git
 2. cd palindrome
 3. npm install
 4. ng serve
