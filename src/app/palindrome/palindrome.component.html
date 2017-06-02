@@ -1,3 +1,12 @@
-<p>
-  palindrome works!
-</p>
+<form>
+	<md-input-container>
+		<input mdInput  [(ngModel)]="largestPalindrome.lowerBound" #lowerBound name="lowerBound" placeholder="Lower Bound" type="number">
+	</md-input-container>
+	<md-input-container>
+		<input mdInput [(ngModel)]="largestPalindrome.upperBound" #upperBound name="upperBound" placeholder="Upper Bound" type="number">
+	</md-input-container>
+	<button md-raised-button (click)="findLargestPalindrome(lowerBound.value, upperBound.value)">Search</button>				
+</form>
+<div>
+	Largest Palindromic number is {{largestPalindrome.largestPalindrome}}
+</div>
